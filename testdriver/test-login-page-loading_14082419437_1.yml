@@ -1,0 +1,23 @@
+version: 4.2.24
+session: 67e3eb213758c7759787bbc0
+steps:
+  - prompt: Ensure the login page is loaded completely.
+    commands:
+      - command: hover-text
+        text: Send me a code
+        description: button to send login code
+        action: hover
+  - prompt: Assert that all necessary elements
+    commands:
+      - command: hover-text
+        text: Google
+        description: sign in with Google button
+        action: hover
+      - command: hover-text
+        text: example@email.com
+        description: email input field placeholder
+        action: hover
+      - command: hover-text
+        text: Send me a code
+        description: button to send login code
+        action: hover
