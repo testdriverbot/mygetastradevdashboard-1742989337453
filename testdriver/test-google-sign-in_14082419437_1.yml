@@ -1,0 +1,13 @@
+version: 4.2.24
+session: 67e3eb1de166e87893ec221d
+steps:
+  - prompt: Click on the "Google" sign-in button.
+    commands:
+      - command: hover-text
+        text: Google
+        description: Google sign-in button
+        action: click
+  - prompt: Assert that the Google login page is displayed.
+    commands:
+      - command: assert
+        expect: the Google login page is displayed with "Sign in"
